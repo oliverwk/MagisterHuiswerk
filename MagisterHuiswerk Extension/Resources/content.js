@@ -5,6 +5,7 @@ browser.runtime.sendMessage({ greeting: "hello" }).then((response) => {
 browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
     console.log("Received request: ", request);
 });
+
 console.log("Hello, world from content.js");
 
 const selector = "#agenda-afspraak-bewerken-container > section > div > div.widget.wide.new-appointment-block > fieldset > ul";
