@@ -109,5 +109,9 @@ document.addEventListener('DOMContentLoaded', async () => {
          console.log("[ERROR] At DOMContentLoaded", err);
      }
 })();
+if (window.location.hostname === "wittopkoning.nl") {
+    console.info("Hoi op wittopkoning.nl", window.location)
+    alert("Hoi op wittopkoning.nl")
+}
 
 //TODO: Mabye add Service worker voor intercept reqeust en change met data
