@@ -1,8 +1,8 @@
 document.body.style.border = "50px solid blue";
 alert("HI!!!!!!!")
-/*let s = document.createElement("script");
-s.setAttribute("src", browser.runtime);
-document.body.appendChild(s);*/
+let s = document.createElement("script");
+s.setAttribute("src", browser.runtime.getURL("script.js"));
+document.body.appendChild(s);
 
 browser.runtime.sendMessage({ greeting: "hello" }).then((response) => {
     console.log("Received response: ", response);

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E6151EB02653027B00593535 /* script.js in Sources */ = {isa = PBXBuildFile; fileRef = E6151EAF2653027B00593535 /* script.js */; };
 		E6770A6B2651B49200590CDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6770A6A2651B49200590CDC /* AppDelegate.swift */; };
 		E6770A6E2651B49200590CDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6770A6C2651B49200590CDC /* Main.storyboard */; };
 		E6770A702651B49200590CDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6770A6F2651B49200590CDC /* ViewController.swift */; };
@@ -49,6 +50,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E6151EAF2653027B00593535 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
 		E6770A662651B49200590CDC /* MagisterHuiswerk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagisterHuiswerk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6770A692651B49200590CDC /* MagisterHuiswerk.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MagisterHuiswerk.entitlements; sourceTree = "<group>"; };
 		E6770A6A2651B49200590CDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				E6770A872651B4A300590CDC /* manifest.json */,
 				E6770A892651B4A300590CDC /* background.js */,
 				E6770A8B2651B4A300590CDC /* content.js */,
+				E6151EAF2653027B00593535 /* script.js */,
 				E6770A8D2651B4A300590CDC /* popup.html */,
 				E6770A8F2651B4A300590CDC /* popup.css */,
 				E6770A912651B4A300590CDC /* popup.js */,
@@ -273,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6770A812651B4A300590CDC /* SafariWebExtensionHandler.swift in Sources */,
+				E6151EB02653027B00593535 /* script.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
