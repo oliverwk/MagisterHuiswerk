@@ -5,9 +5,9 @@ browser.runtime.sendMessage({ greeting: "hello" }).then((response) => {
 browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
     console.log("Received request: ", request);
 });
-consoe.log("Hello, world from content.js");
+console.log("Hello, world from content.js");
 
-const selector ="#agenda-afspraak-bewerken-container > section > div > div.widget.wide.new-appointment-block > fieldset > ul";
+const selector = "#agenda-afspraak-bewerken-container > section > div > div.widget.wide.new-appointment-block > fieldset > ul";
 
 class Dealine {
   constructor() {
@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', async () => {
          let list = await GetElement();
          AddDeadlineElement(list);
      } catch (err) {
-         console.error("[ERROR] At DOMContentLoaded", err);
+         console.log("[ERROR] At DOMContentLoaded", err);
      }
 })();
 
