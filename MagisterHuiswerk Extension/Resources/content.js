@@ -1,3 +1,4 @@
+document.body.style.border = "50px solid blue";
 browser.runtime.sendMessage({ greeting: "hello" }).then((response) => {
     console.log("Received response: ", response);
 });
