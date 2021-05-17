@@ -20,7 +20,7 @@
 
     "content_scripts": [{
         "js": [ "content.js" ],
-        "matches": [ "https://niftarlake.magister.net/magister/#/agenda/afspraak/nieuw/*" ]
+        "matches": [ "*://niftarlake.magister.net/magister/#/agenda/afspraak/nieuw/*" ]
     }],
 
     "browser_action": {

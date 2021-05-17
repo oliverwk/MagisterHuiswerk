@@ -4,3 +4,4 @@ browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
     if (request.greeting === "hello")
         sendResponse({ farewell: "goodbye" });
 });
+console.log("Hello, world from the background", new Date().toString())

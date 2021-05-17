@@ -5,7 +5,7 @@ browser.runtime.sendMessage({ greeting: "hello" }).then((response) => {
 browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
     console.log("Received request: ", request);
 });
-consoe.log("Hello, world");
+consoe.log("Hello, world from content.js");
 
 const selector ="#agenda-afspraak-bewerken-container > section > div > div.widget.wide.new-appointment-block > fieldset > ul";
 
@@ -70,9 +70,9 @@ class Dealine {
 function GetElement() {
     return new Promise(async (resolve, reject) => {
         try {
-            let theIframe = document.querySelector(selector);
-            resolve(theIframe);
-            console.log("ThisIsTheElement:", theIframe);
+            let theList = document.querySelector(selector);
+            resolve(theList);
+            console.log("ThisIsTheElement:", theList);
         } catch (err) {
             if (e instanceof TypeError) {
                 console.error("[ERROR] Whe coun't find the elemnt", err)
@@ -99,7 +99,14 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 });
 
-/*(async function () {
-    
-})();*/
+(async function () {
+     try {
+         console.log("Anonimos function")
+         let list = await GetElement();
+         AddDeadlineElement(list);
+     } catch (err) {
+         console.error("[ERROR] At DOMContentLoaded", err);
+     }
+})();
 
+//TODO: Mabye add Service worker voor intercept reqeust en change met data

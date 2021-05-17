@@ -1,10 +1,10 @@
 {
     "extension_name": {
         "message": "MagisterHuiswerk Extension",
-        "description": "The display name for the extension."
+        "description": "MagisterHuiswerk"
     },
     "extension_description": {
-        "message": "This is MagisterHuiswerk Extension. You should tell us what your extension does here.",
-        "description": "Description of what the extension does."
+        "message": "De MagisterHuiswerk Extensie. Verbeterd het huiswerk invoeren in magister.",
+        "description": "De MagisterHuiswerk Extensie. Verbeterd het huiswerk invoeren in magister."
     }
 }
