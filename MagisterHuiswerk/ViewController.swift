@@ -22,14 +22,17 @@ class ViewController: NSViewController {
         SFSafariExtensionManager.getStateOfSafariExtension(withIdentifier: extensionBundleIdentifier) { (state, error) in
             guard let state = state, error == nil else {
                 // Insert code to inform the user that something went wrong.
+                DispatchQueue.main.async {
+                    self.appNameLabel.stringValue = "Er was een error \(error)."
+                }
                 return
             }
 
             DispatchQueue.main.async {
                 if (state.isEnabled) {
-                    self.appNameLabel.stringValue = "\(appName)'s extension is currently on."
+                    self.appNameLabel.stringValue = "MagisterHuiswerk's extension is currently on."
                 } else {
-                    self.appNameLabel.stringValue = "\(appName)'s extension is currently off. You can turn it on in Safari Extensions preferences."
+                    self.appNameLabel.stringValue = "MagisterHuiswerk's extension is currently off. You can turn it on in Safari Extensions preferences."
                 }
             }
         }
@@ -39,6 +42,9 @@ class ViewController: NSViewController {
         SFSafariApplication.showPreferencesForExtension(withIdentifier: extensionBundleIdentifier) { error in
             guard error == nil else {
                 // Insert code to inform the user that something went wrong.
+                DispatchQueue.main.async {
+                    self.appNameLabel.stringValue = "Er was een error Met open knop\(error)."
+                }
                 return
             }
 

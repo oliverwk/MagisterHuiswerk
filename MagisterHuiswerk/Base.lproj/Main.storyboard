@@ -107,7 +107,7 @@
                                 <subviews>
                                     <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FWV-e2-WQh" userLabel="IconView">
                                         <rect key="frame" x="176" y="136" width="128" height="129"/>
-                                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" image="AppIcon" id="Hhb-TZ-Dhg"/>
+                                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" image="MagisterLogo" id="Hhb-TZ-Dhg"/>
                                     </imageView>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="EB0-ac-UZR">
                                         <rect key="frame" x="38" y="62" width="404" height="32"/>
@@ -163,6 +163,6 @@ DQ
         </scene>
     </scenes>
     <resources>
-        <image name="AppIcon" width="128" height="128"/>
+        <image name="MagisterLogo" width="128" height="106"/>
     </resources>
 </document>
