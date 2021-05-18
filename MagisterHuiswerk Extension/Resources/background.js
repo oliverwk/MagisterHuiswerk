@@ -5,3 +5,4 @@ browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
         sendResponse({ farewell: "goodbye" });
 });
 console.log("Hello, world from the background", new Date().toString())
+console.log(window.location.href);

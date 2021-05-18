@@ -5,7 +5,7 @@
 //  Created by Maarten Wittop Koning on 16/05/2021.
 //
 
-import Cocoa
+//import Cocoa
 import SafariServices.SFSafariApplication
 import SafariServices.SFSafariExtensionManager
 
