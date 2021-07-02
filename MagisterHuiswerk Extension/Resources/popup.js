@@ -1,1 +1,1 @@
-console.log("Hallo Magister!", browser);
+console.log("Hallo Magister!",  browser);

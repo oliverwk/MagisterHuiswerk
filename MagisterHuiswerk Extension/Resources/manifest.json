@@ -20,7 +20,7 @@
 
     "content_scripts": [{
         "js": [ "content.js", "script.js" ],
-        "matches": [ "https://niftarlake.magister.net/magister/#/agenda/afspraak/nieuw/*", "https://wittopkoning.nl*", "*://localhost:*/*" ]
+        "matches": [ "https://*.magister.net/magister/#/agenda/afspraak/nieuw*", "https://wittopkoning.nl*", "*://localhost:*/*" ]
     }],
 
     "browser_action": {
@@ -33,5 +33,5 @@
         }
     },
 
-    "permissions": [ "https://niftarlake.magister.net/*" ]
+    "permissions": [ "https://niftarlake.magister.net/*", "https://wittopkoning.nl*", "*://localhost:*/*" ]
 }

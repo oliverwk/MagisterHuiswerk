@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E60B7354268385220079A1B0 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = E6770A8B2651B4A300590CDC /* content.js */; };
+		E60B7355268385260079A1B0 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = E6770A872651B4A300590CDC /* manifest.json */; };
+		E60B7356268385290079A1B0 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = E6770A892651B4A300590CDC /* background.js */; };
 		E6151EB02653027B00593535 /* script.js in Sources */ = {isa = PBXBuildFile; fileRef = E6151EAF2653027B00593535 /* script.js */; };
 		E6770A6B2651B49200590CDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6770A6A2651B49200590CDC /* AppDelegate.swift */; };
 		E6770A6E2651B49200590CDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6770A6C2651B49200590CDC /* Main.storyboard */; };
@@ -239,8 +242,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E60B7355268385260079A1B0 /* manifest.json in Resources */,
+				E60B7354268385220079A1B0 /* content.js in Resources */,
 				E6770A722651B4A100590CDC /* Assets.xcassets in Resources */,
 				E6770A6E2651B49200590CDC /* Main.storyboard in Resources */,
+				E60B7356268385290079A1B0 /* background.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +427,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "MagisterHuiswerk Extension/MagisterHuiswerk_Extension.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6CDWQZK7UX;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -442,6 +449,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "MagisterHuiswerk Extension/MagisterHuiswerk_Extension.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6CDWQZK7UX;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -466,6 +474,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MagisterHuiswerk/MagisterHuiswerk.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 6CDWQZK7UX;
@@ -489,6 +498,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MagisterHuiswerk/MagisterHuiswerk.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 6CDWQZK7UX;

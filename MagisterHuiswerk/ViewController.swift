@@ -23,7 +23,7 @@ class ViewController: NSViewController {
             guard let state = state, error == nil else {
                 // Insert code to inform the user that something went wrong.
                 DispatchQueue.main.async {
-                    self.appNameLabel.stringValue = "Er was een error \(error)."
+                    self.appNameLabel.stringValue = "Er was een error \(String(describing: error))."
                 }
                 return
             }
@@ -43,7 +43,7 @@ class ViewController: NSViewController {
             guard error == nil else {
                 // Insert code to inform the user that something went wrong.
                 DispatchQueue.main.async {
-                    self.appNameLabel.stringValue = "Er was een error Met open knop\(error)."
+                    self.appNameLabel.stringValue = "Er was een error Met open knop\(String(describing: error))."
                 }
                 return
             }

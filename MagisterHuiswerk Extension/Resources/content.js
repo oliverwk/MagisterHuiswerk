@@ -1,5 +1,5 @@
+console.log("Hello, world from content.js");
 document.body.style.border = "50px solid blue";
-alert("HI!!!!!!!")
 let s = document.createElement("script");
 s.setAttribute("src", browser.runtime.getURL("script.js"));
 document.body.appendChild(s);
@@ -12,7 +12,7 @@ browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
     console.log("Received request: ", request);
 });
 
-console.log("Hello, world from content.js");
+
 
 const selector = "#agenda-afspraak-bewerken-container > section > div > div.widget.wide.new-appointment-block > fieldset > ul";
 
@@ -115,6 +115,7 @@ document.addEventListener('DOMContentLoaded', async () => {
          console.log("[ERROR] At DOMContentLoaded", err);
      }
 })();
+
 if (window.location.hostname === "wittopkoning.nl") {
     console.info("Hoi op wittopkoning.nl", window.location)
     alert("Hoi op wittopkoning.nl")
